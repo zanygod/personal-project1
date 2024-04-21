@@ -7,9 +7,8 @@ This project aims to develop a web-based task management application using moder
 ## Design Choices
 
 ### Technology Stack:
-- **Frontend**: HTML5, CSS3, JavaScript (ES6), jQuery
+- **Frontend**: HTML5, CSS3, JavaScript (ES6)
 - **Backend**: Node.js, Express.js
-- **Database**: MongoDB
 - **Additional Libraries**: Bootstrap for styling, Handlebars.js for templating
 
 ### Design Considerations:
