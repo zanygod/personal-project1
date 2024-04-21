@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background-video">
+            <video autoplay muted loop id="video-bg">
+                <source src="your-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <header>
+            <h1>MY PERSONAL WEBSITE</h1>
+        </header>
+        <div class="hero">
+            <div class="content">
+                <h2>My Skills Portfolio</h2>
+                <section id="skills">
+                    <table>
+                        <tr>
+                            <td>
+                                <button class="icon-btn" onclick="toggleDescription('html')">
+                                    <i class="fab fa-html5"></i>
+                                </button>
+                                <h3>HTML</h3>
+                            </td>
+                            <td>
+                                <p id="html-description" style="display: none;">HTML is the backbone of web development. With strong skills in HTML, I can create well-structured, semantic markup for web pages, ensuring accessibility and search engine optimization.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="icon-btn" onclick="toggleDescription('css')">
+                                    <i class="fab fa-css3-alt"></i>
+                                </button>
+                                <h3>CSS</h3>
+                            </td>
+                            <td>
+                                <p id="css-description" style="display: none;">CSS enables me to style web pages beautifully. With proficiency in CSS, I can design layouts, add animations, and ensure responsiveness, enhancing the visual appeal and user experience of websites.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="icon-btn" onclick="toggleDescription('javascript')">
+                                    <i class="fab fa-js"></i>
+                                </button>
+                                <h3>JavaScript</h3>
+                            </td>
+                            <td>
+                                <p id="javascript-description" style="display: none;">JavaScript empowers me to create interactive and dynamic web experiences. With solid knowledge of JavaScript, I can manipulate the DOM, handle events, and implement functionalities that enrich user interactions on websites.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <button onclick="window.location.href='index.html'">Go Back to Home</button>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            var description = document.getElementById(id + '-description');
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

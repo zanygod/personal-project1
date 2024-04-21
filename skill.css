@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#video-bg {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Add transparency for better visibility */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.hero {
+    padding: 100px 0;
+    /* Add more styling for hero section if needed */
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff; /* Add text color for better contrast */
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}

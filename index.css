@@ -1,96 +1,148 @@
-/* Reset some default browser styles */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-    color: navy;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+ background-color: rgb(61, 63, 212);
+ color: #eee;
 }
-
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5; /* Light background color */
-    color: #333; /* Text color */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('https://w0.peakpx.com/wallpaper/795/959/HD-wallpaper-best-web-development-company-in-lucknow-web-developer-web-design-web-application-web-development.jpg');
+  background-size: cover;
+
 }
 
-/* Navigation styles */
+img{
+  width: 100%;
+ 
+}
 nav {
-    text-align: right;
-    background-color: #6D4C41; /* Primary color for navigation */
-    padding: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff; 
-    text-decoration: none;
-    font-weight: bold;
-}
-#hero {
-    background-image: url('path/to/hero-background.jpg'); /* Add the path to your hero background image */
-    background-size: cover;
-    background-position: center;
-    height: 300px; 
-    display: flex;
-    justify-content: space-between; /* Place items at the start and end of the container */
-    align-items: center;
-    padding: 0 20px; /* Add padding to the sides */
-}
-
-#work {
-    padding: 50px;
-}
-
-.project {
-    background-color: #fff; /* Background color for project cards */
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.project h2 {
-    color: #6D4C41; /* Primary color for project titles */
-}
-
-.project p {
-    color: #333; 
-}
-.img{
-    max-width: 100%;
-    max-height: 100%;
-}
-.hero-content, img{
-    flex: 1; 
   display: flex;
   justify-content: center;
-  text-align: center;
-  height: 300px;
-
+}
+ul {
+  display: inline;
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  padding: 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.content {
+  position: absolute;
+  top: 27vh;
+  left: 2%;
+  width: 40%;
+  background-color: #374ec2;
+}
+.content h1 {
+  font-size: 60px;
+  color: burlywood;
+}
+.content h2 {
+  color: rgb(218, 112, 204);
+}
+hr {
+  margin-top: 30px;
+  width: 20%;
+  height: 6px;
+  background: #000;
+}
+.theme-toggle {
+  margin-right: 20px;
 }
 
-#contact {
-    background-color: #8D6E63; /* Secondary color for contact section */
-    color: #fff; /* Text color for contact section */
-    padding: 50px;
+.theme-toggle label {
+  cursor: pointer;
+}
+.content p{
+  margin-top: 30px;
+  font-size: 16px;
+}
+button{
+  margin-top: 20px;
+  background: rgb(61, 63, 212);
+  border: none;
+  outline: .04em;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
 }
 
-.contact-info {
-    text-align: center;
+button {
+  transition: transform 0.2s ease-in-out;
 }
-.social-links a {
-    color: #fff; /* Text color for social media links */
-    margin-right: 10px;
-    text-decoration: none;
+button:hover {
+  transform: scale(1.1);
 }
-footer {
-    background-color: #d0af95; /* Dark background color for footer */
-    color: #fff; /* Text color for footer */
-    text-align: center;
-    padding: 20px;
+
+img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 56%;
+  animation: animate 1s ease-in-out;
 }
+@keyframes animate{
+  0%{
+      opacity: 0;
+      transform: scale(.5);
+  }
+  100%{
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+nav.dark-mode {
+  background-color: #444;
+}
+
+nav.dark-mode ul li a {
+  color: #eee;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f9f9f9;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
