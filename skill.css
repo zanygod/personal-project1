@@ -1,47 +1,36 @@
-body, html {
+body {
+    background-color: #2f26d0; 
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    height: 100%;
+    color: #faecec;
 }
 
 .container {
-    position: relative;
-    z-index: 1;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.background-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-}
-
-#video-bg {
-    width: auto;
-    height: auto;
-    object-fit: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.5); /* Add transparency for better visibility */
+    background-color: #2b4cac;
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
 .hero {
-    padding: 100px 0;
-    /* Add more styling for hero section if needed */
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 .content {
     max-width: 800px;
     margin: 0 auto;
-    color: #fff; /* Add text color for better contrast */
 }
 
 h1 {
@@ -53,6 +42,19 @@ h2 {
     margin-top: 20px;
 }
 
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
 footer {
     text-align: center;
     margin-top: 50px;
@@ -60,8 +62,8 @@ footer {
 }
 
 button {
-    background-color: #333;
-    color: #fff;
+    background-color: #f2dbdb;
+    color: #9e068a;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -69,5 +71,5 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #b5e526;
 }
