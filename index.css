@@ -1,0 +1,96 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color: navy;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5; /* Light background color */
+    color: #333; /* Text color */
+}
+
+/* Navigation styles */
+nav {
+    text-align: right;
+    background-color: #6D4C41; /* Primary color for navigation */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+    font-weight: bold;
+}
+#hero {
+    background-image: url('path/to/hero-background.jpg'); /* Add the path to your hero background image */
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    display: flex;
+    justify-content: space-between; /* Place items at the start and end of the container */
+    align-items: center;
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+#work {
+    padding: 50px;
+}
+
+.project {
+    background-color: #fff; /* Background color for project cards */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project h2 {
+    color: #6D4C41; /* Primary color for project titles */
+}
+
+.project p {
+    color: #333; 
+}
+.img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.hero-content, img{
+    flex: 1; 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+
+}
+
+#contact {
+    background-color: #8D6E63; /* Secondary color for contact section */
+    color: #fff; /* Text color for contact section */
+    padding: 50px;
+}
+
+.contact-info {
+    text-align: center;
+}
+.social-links a {
+    color: #fff; /* Text color for social media links */
+    margin-right: 10px;
+    text-decoration: none;
+}
+footer {
+    background-color: #d0af95; /* Dark background color for footer */
+    color: #fff; /* Text color for footer */
+    text-align: center;
+    padding: 20px;
+}
